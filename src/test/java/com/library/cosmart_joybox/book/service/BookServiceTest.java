@@ -51,14 +51,6 @@ class BookServiceTest {
         return ResponseEntity.status(status).body(entry);
     }
 
-    @Test
-    void test_rest_call() {
-        RestTemplate restTemplate = new RestTemplate();
-        String url = "https://openlibrary.org/subjects/love.json";
-        ResponseEntity<SubjectEntry> response = restTemplate.getForEntity(url, SubjectEntry.class);
-        Assertions.assertEquals(response.getStatusCode(), HttpStatus.OK);
-    }
-
     @Nested
     class getBookListBySubject {
         @Test
