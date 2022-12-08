@@ -40,4 +40,4 @@
   curl --location --request GET 'localhost:8080/library/book/pickup'
   ```
   
-## It is important to note the for book pick-up schedule will not be persisted after the service has been stopped (as there is no database).
+## It is important to note that for `book pick-up schedule` will not be persisted after the service has been stopped (as there is no database).
